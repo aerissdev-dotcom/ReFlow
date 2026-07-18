@@ -8,15 +8,41 @@
 </head>
 <body>
     <div class="main-container">
+        <div class="hang">
+                
+            </div>
         <div class="nav-container">
             <ul>
                 <li class = "italic">ReFlow</li>
-                <li id = "home">Home</li>
-                <li id = "track">Track</li>
+                <li id = "home"><a href = "index.html">Home</a></li>
+                <li id = "track"><a href="home.html">Track</a></li>
             </ul>
         </div>
         <p class = "logo">ReFlow.</p>
         <p class = "logo-description">Track your addiction recovery. Watch the river rise.</p>
     </div>
+    <div class="secondary-containers">
+        <div class="secondary-container-left">
+            <form action="home.html" method="GET">
+                <p>Name your addiction.</p>
+                <input type="text" name="addiction-name-input" id = "addiction-name-input" placeholder="e.g. Smoking">
+            </form>
+        </div>
+        <div class="secondary-container-right">
+                <form action="home.html" method="GET">
+                <p>Why do you want to stop?</p>
+                <input type="text" name="why-stop-input" id="why-stop-input" placeholder="e.g. For my family">
+    </form>
+        </div>
+    </div>
+    <div class="last-container">
+    <p class="last-title">What awaits you</p>
+    <div class="last-features">
+        <span class="last-chip" title = "Watch your progress come to life as a flowing river. Each clean day adds more water, plants, and fish. When you slip, the river gently recedes without guilt or punishment.">Visual Progress River</span>
+        <span class="last-chip" title="Talk to an AI companion that listens without judgment. Share your struggles, celebrate your wins, or just vent when things get hard. Available whenever you need it.">AI companion</span>
+        <span class="last-chip" title="Take a moment each day to reflect on your mood, triggers, and progress. Your check-ins help you understand your patterns and celebrate how far you've come.">Daily check-in</span>
+    </div>
+    <a href="home.html" class="cta-button">Get Started</a>
+</div>
 </body>
 </html>
