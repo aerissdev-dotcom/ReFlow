@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap');
+
+*{
+     font-family: "Anton", sans-serif;
+     padding: 0;
+     margin: 0;
+}
+
+body {
+    background-color: #f5f2df;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(235, 224, 200);
+    width: 95%;
+    height: 550px;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.logo {
+   color: rgb(0, 0, 0);
+    font-size: 150px;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 75px;
+}
+
+.logo-description {
+    font-family: "Outfit", sans-serif;
+    color: rgb(201, 13, 13);
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.nav-container {
+    width: 50%;
+    padding: 20px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px dashed rgb(201, 13, 13);
+    margin-top: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    font-family: "Outfit", sans-serif;
+    height: 100%;
+    padding: 0 20px;
+}
+
+li {
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    height: 100%;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+#home {
+    background-color: rgba(201, 13, 13, 0.455);
+    width: 15%;
+    min-width: 60px;
+    height: 100%;
+    padding: 8px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#track {
+    background-color: rgba(201, 13, 13, 0.455);
+    width: 15%;
+    min-width: 60px;
+    height: 100%;
+    padding: 8px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+}
