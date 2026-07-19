@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReFlow — Your river</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="wrap">
+        <div class="nav-pill">
+            <a class="brand" href="index.html">ReFlow</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="home.html">Track</a></li>
+                    <li><a href="ai.html">Companion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="tracker-hero wrap">
+        <p class="eyebrow" id="addiction-label">Staying clean</p>
+        <h1 id="addiction-name">—</h1>
+        <p class="reason-line" id="reason-line"></p>
+
+        <div class="stat-row">
+            <div class="stat primary">
+                <span class="num days-number">0</span>
+                <span class="unit">Days</span>
+            </div>
+            <div class="stat secondary">
+                <span class="num hours-number">00</span>
+                <span class="unit">Hours</span>
+            </div>
+            <div class="stat secondary">
+                <span class="num minutes-number">00</span>
+                <span class="unit">Minutes</span>
+            </div>
+            <div class="stat secondary">
+                <span class="num seconds-number">00</span>
+                <span class="unit">Seconds</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="river-band">
+        <div class="river-band-inner wrap">
+            <h2>Your progress river</h2>
+            <p class="river-message" id="river-message">Seen from above — a trickle so far.</p>
+        </div>
+
+        <svg class="river-svg-full" viewBox="0 0 1600 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An aerial view of a river that widens and fills with life as clean time accumulates">
+            <defs>
+                <linearGradient id="riverBlue" x1="0" y1="120" x2="0" y2="380" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#7ec2ea"/>
+                    <stop offset="100%" stop-color="#1c5f91"/>
+                </linearGradient>
+            </defs>
+
+            <rect x="0" y="0" width="1600" height="500" fill="#12261f"/>
+            <ellipse cx="220" cy="90" rx="180" ry="60" fill="rgba(244,239,221,0.03)"/>
+            <ellipse cx="1300" cy="420" rx="220" ry="70" fill="rgba(244,239,221,0.03)"/>
+            <ellipse cx="850" cy="60" rx="150" ry="45" fill="rgba(244,239,221,0.025)"/>
+
+            <path id="riverGlow" d="M -100,250 C 150,150 300,350 500,260 C 700,170 850,330 1050,240 C 1250,150 1400,320 1700,250"
+                  fill="none" stroke="#0e3350" stroke-width="200" opacity="0.25" stroke-linecap="round"/>
+
+            <path id="riverPath" d="M -100,250 C 150,150 300,350 500,260 C 700,170 850,330 1050,240 C 1250,150 1400,320 1700,250"
+                  fill="none" stroke="url(#riverBlue)" stroke-width="60" stroke-linecap="round"/>
+
+            <path id="riverFlow" d="M -100,250 C 150,150 300,350 500,260 C 700,170 850,330 1050,240 C 1250,150 1400,320 1700,250"
+                  fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="5" stroke-linecap="round" stroke-dasharray="4 26"/>
+
+            <g id="algae-1" class="milestone" opacity="0">
+                <circle cx="360" cy="295" r="14" fill="#4f9c56"/>
+                <circle cx="382" cy="308" r="10" fill="#5aab60"/>
+                <circle cx="345" cy="312" r="8" fill="#5aab60"/>
+            </g>
+            <g id="algae-2" class="milestone" opacity="0">
+                <circle cx="1190" cy="280" r="15" fill="#4f9c56"/>
+                <circle cx="1214" cy="270" r="9" fill="#5aab60"/>
+                <circle cx="1200" cy="296" r="9" fill="#5aab60"/>
+            </g>
+            <g id="fish-1" class="milestone" opacity="0">
+                <ellipse cx="640" cy="222" rx="18" ry="9" fill="#f4efdd"/>
+                <path d="M624,222 L610,213 L610,231 Z" fill="#f4efdd"/>
+            </g>
+            <g id="fish-2" class="milestone" opacity="0">
+                <ellipse cx="960" cy="268" rx="20" ry="10" fill="#f4efdd"/>
+                <path d="M942,268 L927,258 L927,278 Z" fill="#f4efdd"/>
+            </g>
+            <g id="fish-3" class="milestone" opacity="0">
+                <ellipse cx="1360" cy="210" rx="20" ry="10" fill="#f4efdd"/>
+                <path d="M1342,210 L1327,200 L1327,220 Z" fill="#f4efdd"/>
+            </g>
+        </svg>
+
+        <div class="river-band-inner wrap">
+            <p class="river-footer-note">Slipped? That's part of recovery, not the end of it. Logging it honestly keeps ReFlow useful.</p>
+            <button id="slip-btn" class="slip-button" type="button">I slipped</button>
+        </div>
+    </section>
+
+    <footer>ReFlow — one honest day at a time.</footer>
+
+<script src="river.js"></script>
+</body>
+</html>

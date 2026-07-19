@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReFlow — Your companion</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="wrap">
+        <div class="nav-pill">
+            <a class="brand" href="index.html">ReFlow</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home.html">Track</a></li>
+                    <li class="active"><a href="ai.html">Companion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="tracker-hero wrap">
+        <p class="eyebrow">Always here</p>
+        <h1 class="chat-title">Talk it through</h1>
+        <p class="reason-line">Cravings, wins, bad days — say whatever's on your mind.</p>
+    </section>
+
+    <section class="chat-section wrap">
+        <div class="chat-card">
+            <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+
+            <div class="chat-typing" id="chat-typing" hidden>
+                <span></span><span></span><span></span>
+            </div>
+
+            <form class="chat-input-row" id="chat-form">
+                <label for="chat-input" class="sr-only">Message</label>
+                <input type="text" id="chat-input" placeholder="Type a message…" autocomplete="off">
+                <button type="submit" class="send-button" id="send-btn">Send</button>
+            </form>
+
+            <div class="chat-actions">
+                <button type="button" class="clear-button" id="clear-btn">Clear conversation</button>
+                <p class="chat-disclaimer">Preview UI only — replies aren't from a live AI yet.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>ReFlow — one honest day at a time.</footer>
+
+<script src="ai.js"></script>
+</body>
+</html>
