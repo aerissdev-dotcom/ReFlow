@@ -719,3 +719,73 @@ footer {
         gap: 18px;
     }
 }
+
+/* ---------- about page ---------- */
+
+.qol-banner {
+    text-align: center;
+    margin: 6px auto 44px;
+}
+
+.qol-banner p {
+    display: inline-block;
+    background: var(--ember-soft);
+    border: 1px solid rgba(211, 169, 48, 0.35);
+    color: var(--ember);
+    padding: 12px 26px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    max-width: 90%;
+}
+
+.about-problem {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 10px 24px 50px;
+}
+
+.about-problem h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-problem p {
+    color: var(--ink-soft);
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.about-problem p:last-child {
+    margin-bottom: 0;
+}
+
+.about-closing {
+    text-align: center;
+    padding: 10px 0 70px;
+}
+
+.about-closing h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: clamp(24px, 4vw, 30px);
+}
+
+.about-closing p {
+    margin: 14px auto 0;
+    color: var(--ink-soft);
+    max-width: 520px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-closing .cta-button {
+    display: inline-block;
+    margin-top: 28px;
+    text-decoration: none;
+}
