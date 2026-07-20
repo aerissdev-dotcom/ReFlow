@@ -2,12 +2,22 @@
     
     const STORAGE_KEY = 'chatHistory';
     const GREETING = "Hi, I'm here whenever you want to talk. What's on your mind?";
+    const MAX_MESSAGE_LENGTH = 500;
 
     const messagesEl = document.getElementById('chat-messages');
     const typingEl = document.getElementById('chat-typing');
     const form = document.getElementById('chat-form');
     const input = document.getElementById('chat-input');
     const clearBtn = document.getElementById('clear-btn');
+
+    function sanitizeInput(text) {
+        return text
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#x27;')
+            .substring(0, MAX_MESSAGE_LENGTH);
+    }
 
     function loadHistory() {
         try {
@@ -48,28 +58,29 @@
     }
 
     async function generateReply(userText) {
-    try {
-        const response = await fetch('/api/chat', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ userText })
-        });
-        const data = await response.json();
-        return data.reply;
-    } catch (error) {
-        return "I'm having trouble connecting right now. But I'm still here for you. Want to try again?";
+        try {
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ userText })
+            });
+            const data = await response.json();
+            return data.reply;
+        } catch (error) {
+            return "I'm having trouble connecting right now. But I'm still here for you. Want to try again?";
+        }
     }
-}
 
     async function sendMessage(text) {
-        history.push({ role: 'user', text });
-        appendBubble('user', text, true);
+        const clean = sanitizeInput(text);
+        history.push({ role: 'user', text: clean });
+        appendBubble('user', clean, true);
         saveHistory();
         input.value = '';
         scrollToBottom();
 
         setTyping(true);
-        const reply = await generateReply(text);
+        const reply = await generateReply(clean);
         setTyping(false);
         history.push({ role: 'ai', text: reply });
         appendBubble('ai', reply, true);
