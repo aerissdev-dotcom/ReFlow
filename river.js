@@ -38,7 +38,7 @@
     const GOAL_DAYS = 20;
 
     function messageFor(days) {
-        if (days < 1) return 'Seen from above — a trickle so far.';
+        if (days < 1) return 'Seen from above - a trickle so far.';
         if (days < 2) return 'A thin blue line is forming.';
         if (days < 8) return 'The channel is widening.';
         if (days < 15) return 'Algae is taking hold along the banks.';
