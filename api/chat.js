@@ -24,7 +24,7 @@ RULES (follow strictly):
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
-                'HTTP-Referer': 'https://my-site.vercel.app',
+                'HTTP-Referer': 'https://re-flow-ashen.vercel.app',
                 'X-Title': 'Recovery Companion'
             },
             body: JSON.stringify({
