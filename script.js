@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById('resume-banner');
 
     if (storedAddiction && banner) {
-        banner.innerHTML = `Already tracking <strong>${storedAddiction}</strong> — <a href="home.html">go to your river &rarr;</a>`;
+        banner.innerHTML = `Already tracking <strong>${storedAddiction}</strong> — <a href="track.html">go to your river &rarr;</a>`;
         banner.hidden = false;
     }
 
@@ -32,6 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('addiction', addiction);
         localStorage.setItem('reason', reason);
         localStorage.setItem('startDate', Date.now().toString());
-        window.location.href = 'home.html';
+        window.location.href = 'track.html';
     });
 });
