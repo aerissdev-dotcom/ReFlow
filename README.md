@@ -1,26 +1,26 @@
 # ReFlow
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A minimalist addiction recovery tracker that visualizes your progress as a living river. Stay clean, the river fills with water and life. Slip, it gently recedes without guilt or punishment.
+A simple addiction recovery tracker. Weekly circle tracker, clean days counter, AI companion for support, and an impulse button for when the urge hits. All data stays on your device.
 
 ## Features
 
-- **Visual Progress River** – Watch your recovery come to life as an animated SVG river that grows with each clean day
-- **AI Companion** – Talk to a supportive AI that listens without judgment, powered by DeepSeek API
-- **Daily Check-in** – Track your mood and reflect on your progress
-- **Onboarding Flow** – Name your addiction and set your reason for quitting
-- **Privacy First** – All data stored locally in your browser via localStorage, no accounts needed
-- **Simple input Sanitization** – Might protect against XSS attacks
+- **Weekly Circle Tracker** – Seven circles, each clean day fills one
+- **AI Companion** – Talk to a supportive AI powered by DeepSeek API
+- **Impulse Button** – When the urge hits, one button gives you a moment to breathe
+- **Clean Days Counter** – Days, hours, and minutes since your last slip
+- **Onboarding** – Name your addiction and set your reason for quitting
+- **Input Sanitization** – Basic protection against XSS attacks
 
 ## Pages
 
-- **Home** – Landing page with onboarding and feature overview
+- **Home** – Main page with feature overview
 ![Home Page](screenshots/index.png)
 
-- **Track** – Main dashboard with day counter, live timer, and the progress river
+- **Track** – Main dashboard with day counter and weekly circles
 ![Track Page](screenshots/track.png)
 
-- **Companion** – AI chat interface for support and reflection
+- **Companion** – AI chat interface for support
 ![Companion Page](screenshots/companion.png)
 
 - **About** – Project mission and QoL improvements
@@ -29,8 +29,7 @@ A minimalist addiction recovery tracker that visualizes your progress as a livin
 ## Tech Stack
 
 - HTML5, CSS3, JavaScript
-- SVG animations (river visualization)
-- DeepSeek API (AI companion)
+- DeepSeek API (AI)
 - Vercel (hosting + serverless functions)
 - localStorage (data persistence)
 
@@ -41,14 +40,14 @@ A minimalist addiction recovery tracker that visualizes your progress as a livin
 ## How It Works
 
 1. Name your addiction and your reason for quitting
-2. Each day you stay clean, the river grows - water rises, plants appear, fish swim
-3. If you slip, the river gently recedes - no punishment, no hard reset
+2. Each clean day fills one circle on your weekly tracker
+3. If you slip, the counter resets but your progress stays visible
 4. Talk to the AI companion anytime you need support
-5. Track your mood daily to understand your patterns
+5. Use the Impulse button when cravings hit hard
 
 ## Why I Built This
 
-I know what addiction feels like. Most recovery tools are either too clinical or too punishing - they reset your progress when you slip. ReFlow is different. It shows you that one bad day doesn't erase your progress. The river can always flow again.
+I know what addiction feels like. Most recovery tools punish you for slipping. ReFlow doesn't.
 
 ## License
 MIT

@@ -3,53 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReFlow — Your companion</title>
-    <link rel="icon" href="data:,">
+    <title>ReFlow - Companion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="wrap">
-        <div class="nav-pill">
-            <a class="brand" href="index.html">ReFlow</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="track.html">Track</a></li>
-                    <li class="active"><a href="ai.html">Companion</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="tracker-hero wrap">
-        <p class="eyebrow">Always here</p>
-        <h1 class="chat-title">Talk it through</h1>
-        <p class="reason-line">Cravings, wins, bad days - say whatever's on your mind.</p>
-    </section>
-
-    <section class="chat-section wrap">
-        <div class="chat-card">
-            <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
-
+    <nav>
+        <ul class="left-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="track.html">Track</a></li>
+        </ul>
+        <p><a href="index.html" class = "logo">REFLOW</a></p>
+        <ul class="right-nav">
+            <li><a href="ai.html">Companion</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="photo-container">
+    <img src="assets/addiction.png" alt="addiction banner">
+</div>
+    <div class="first-box">
+        <p class="description">
+            This is a space to talk things through with your companion.
+        </p>
+    </div>
+    <div class="second-box-ai">
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages"></div>
             <div class="chat-typing" id="chat-typing" hidden>
                 <span></span><span></span><span></span>
             </div>
-
-            <form class="chat-input-row" id="chat-form">
-                <label for="chat-input" class="sr-only">Message</label>
-                <input type="text" id="chat-input" placeholder="Type a message…" autocomplete="off">
-                <button type="submit" class="send-button" id="send-btn">Send</button>
+            <form class="chat-form" id="chat-form">
+                <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off" maxlength="500">
+                <button type="submit" class="clean-btn">Send</button>
             </form>
-
-            <div class="chat-actions">
-                <button type="button" class="clear-button" id="clear-btn">Clear conversation</button>
-            </div>
+            <button type="button" id="clear-btn" class="slip-btn">Clear conversation</button>
         </div>
-    </section>
-
-    <footer>ReFlow - one honest day at a time.</footer>
-
-<script src="ai.js"></script>
+    </div>
+    <footer>
+        &copy;&nbsp; <a href="https://github.com/aerissdev-dotcom" class="footer-a">Aeriss-Dev 2026</a>
+    </footer>
+    <script src="ai.js"></script>
 </body>
 </html>

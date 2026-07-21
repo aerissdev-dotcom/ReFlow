@@ -3,87 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReFlow - Track your recovery</title>
-    <link rel="icon" href="data:,">
+    <title>ReFlow</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="wrap">
-        <div class="nav-pill">
-            <a class="brand" href="index.html">ReFlow</a>
-            <nav>
-                <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="track.html">Track</a></li>
-                    <li><a href="ai.html">Companion</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero wrap">
-        <div class="hero-text">
-            <h1>Watch the <em>river</em> rise.</h1>
-            <p>ReFlow turns every clean hour into visible progress - a river that grows as you stay the course, and never punishes you for a rough day.</p>
-            <p class="resume-banner" id="resume-banner" hidden></p>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-            <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="160" cy="160" r="150" fill="var(--paper-deep)"/>
-                <path d="M20,190 C70,160 110,210 160,185 C210,160 250,205 300,180 L300,300 L20,300 Z" fill="url(#heroWater)"/>
-                <path d="M20,210 C70,182 110,228 160,205 C210,182 250,222 300,200" stroke="rgba(255,255,255,0.25)" stroke-width="4" fill="none" stroke-linecap="round"/>
-                <circle cx="235" cy="95" r="26" fill="var(--river-deep)"/>
-                <defs>
-                    <linearGradient id="heroWater" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#f2d879"/>
-                        <stop offset="100%" stop-color="#b3891f"/>
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-    </section>
-
-    <form class="start-form wrap" id="start-form" novalidate>
-        <div class="form-card">
-            <h2>Start your river</h2>
-            <div class="field-row">
-                <div class="field">
-                    <label for="addiction-name-input">Name your addiction</label>
-                    <input type="text" name="addiction-name-input" id="addiction-name-input" placeholder="e.g. Smoking" autocomplete="off">
-                </div>
-                <div class="field">
-                    <label for="why-stop-input">Why do you want to stop?</label>
-                    <input type="text" name="why-stop-input" id="why-stop-input" placeholder="e.g. For my family" autocomplete="off">
-                </div>
-            </div>
-            <button type="submit" class="cta-button" id="get-started-btn">Get started</button>
-        </div>
-    </form>
-
-    <section class="features wrap">
-        <h2>What awaits you</h2>
-        <div class="feature-grid">
+    <nav>
+        <ul class="left-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="track.html">Track</a></li>
+        </ul>
+        <p><a href="index.html" class = "logo">REFLOW</a></p>
+        <ul class="right-nav">
+            <li><a href="ai.html">Companion</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="photo-container">
+        <img src="assets/addiction.png" alt="addiction banner">
+    </div>
+    <div class="first-box">
+        <p class="description">
+            ReFlow helps you stay accountable during addiction recovery by tracking your clean days on a simple weekly circle tracker. Each circle fills when you stay clean. When you slip, that day stays empty but your overall count never resets. The app also includes an AI companion for support and daily check-ins to track your mood over time.
+        </p>
+    </div>
+    <div class="second-box">
+        <div class="features">
             <div class="feature-card">
-                <div class="icon">R</div>
-                <h3>Visual progress river</h3>
-                <p>Watch your progress come to life as a flowing river. Each clean day adds more water, plants, and fish. A slip lets the river recede gently, without guilt or punishment.</p>
+
+                <h3>Weekly Circle Tracker</h3>
+                <p>Seven circles, each clean day fills one</p>
             </div>
             <div class="feature-card">
-                <div class="icon">A</div>
-                <h3>AI companion</h3>
-                <p>Talk to a companion that listens without judgment. Share your struggles, celebrate your wins, or just vent when things get hard — available whenever you need it.</p>
+
+                <h3>AI Companion</h3>
+                <p>Talk when you need to</p>
             </div>
             <div class="feature-card">
-                <div class="icon">C</div>
-                <h3>Daily check-in</h3>
-                <p>Take a moment each day to reflect on your mood, triggers, and progress. Your check-ins help you understand your patterns and see how far you've come.</p>
+                <h3>Impulse</h3>
+                <p>When your addiction impulse hits, give yourself a deep-breather</p>
             </div>
         </div>
-    </section>
-
-    <footer>ReFlow — one honest day at a time.</footer>
-
-<script src="script.js"></script>
+        <a href="track.html" class="cta-button">Get Started</a>
+    </div>
+    <footer>
+        &copy;&nbsp; <a href="https://github.com/aerissdev-dotcom" class = "footer-a">Aeriss-Dev 2026</a>
+    </footer>
 </body>
 </html>
